@@ -38,7 +38,7 @@ export default function Contact() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/aditya-singh-47915520b/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-5 py-3 rounded-full flex items-center gap-2 text-sm font-bold transition-all hover:border-red-500/40"
