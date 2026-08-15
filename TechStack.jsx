@@ -2,21 +2,33 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Node.js", category: "Backend" },
+  // Core & Low-Level
+  { name: "C / C++", category: "Systems" },
+  { name: "Problem Solving & DSA", category: "Core" },
+
+  // Cybersecurity & Defense
+  { name: "System Security & Defense", category: "Cybersecurity" },
+  { name: "Network Protocol Analysis", category: "Networking" },
+  { name: "Ethical Hacking Basics", category: "Security" },
+
+  // Development & Web
+  { name: "Full-Stack Web Dev", category: "Web" },
   { name: "React / Next.js", category: "Frontend" },
-  { name: "JavaScript / ES6+", category: "Language" },
-  { name: "SQL & Databases", category: "Data" },
+  { name: "Modern UI / UX Design", category: "UI Dev" },
   { name: "Tailwind CSS", category: "Styling" },
-  { name: "Git & GitHub", category: "DevOps" },
-  { name: "REST APIs", category: "Architecture" },
-  { name: "Vercel / Deployment", category: "Cloud" },
+  { name: "Node.js & Express", category: "Backend" },
+
+  // Workflow & Tools
+  { name: "Vibe Coding & AI Tooling", category: "Workflow" },
+  { name: "Linux Administration", category: "OS" },
+  { name: "Git & Version Control", category: "DevOps" },
 ];
 
 export default function TechStack() {
   return (
     <section id="skills" className="py-20 px-4 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-extrabold text-white mb-2">Tech Stack</h2>
-      <p className="text-slate-400 text-sm mb-10">Technologies and tools I use to bring ideas to life.</p>
+      <h2 className="text-3xl font-extrabold text-white mb-2">Tech Stack & Domain Focus</h2>
+      <p className="text-slate-400 text-sm mb-10">Systems, security, full-stack building, and modern workflows.</p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {skills.map((skill, idx) => (
