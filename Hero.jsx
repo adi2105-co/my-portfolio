@@ -37,7 +37,7 @@ export default function Hero() {
 
           {/* Profile Image */}
           <motion.img 
-            src="/images/image.png"
+            src="image.png"
             alt="Aditya Singh"
             whileHover={{ scale: 1.08, rotate: 1 }}
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
