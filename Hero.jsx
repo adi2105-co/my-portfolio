@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -9,8 +10,20 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        className="max-w-3xl flex flex-col items-center"
       >
+        {/* Profile Image */}
+        <div className="flex justify-center mb-6">
+          <Image 
+            src="/images/aditya.png"
+            alt="Aditya Singh"
+            width={180}
+            height={180}
+            className="rounded-full border-4 border-white/20 shadow-xl object-cover"
+            priority
+          />
+        </div>
+
         {/* Updated Badge */}
         <span className="text-xs font-bold uppercase tracking-widest text-red-500 bg-red-950/40 border border-red-800/40 px-3 py-1 rounded-full">
           Cybersecurity Enthusiast
